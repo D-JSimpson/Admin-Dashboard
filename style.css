@@ -14,9 +14,20 @@
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
-.head{
+.header{
 background-color: aqua;
 grid-column: 2;
+display: flex;
+flex-direction: column;
+}
+.search{
+background-color: azure;
+height: 45%;
+}
+.nav{
+display: flex;
+background-color: aquamarine;
+height: 55%;
 }
 .sidebar{
 background-image: linear-gradient(225deg, var(--custom-blue), var(--sky-blue));
