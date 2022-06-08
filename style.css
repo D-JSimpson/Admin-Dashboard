@@ -2,6 +2,8 @@
 :root{
     --custom-blue: #2563EB;
     --sky-blue: #0284C7;
+    --slate-gray: #E2E8F0;
+    --slate-white: #F8FAFC;
     font-family: 'Shippori Antique B1', sans-serif;
 }
 *{
@@ -15,19 +17,48 @@
     height: 100vh;
 }
 .header{
-background-color: aqua;
 grid-column: 2;
 display: flex;
 flex-direction: column;
 }
 .search{
-background-color: azure;
+display: flex;
+align-items: center;
+background-color: var(--slate-white);
 height: 45%;
+padding-right: 5%;
+}
+.header-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.search-bar{
+    background-color: var(--slate-gray);
+    border: none;
+    height: 50%;
+    border-radius: 20px;
+    flex: 1;
+    padding-left: 2%;
+}
+.empty-space{
+    height: 100%;
+    width: 10%;
+}
+.img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
 }
 .nav{
 display: flex;
 background-color: aquamarine;
 height: 55%;
+}
+
+.big-img{
+    height: 90px;
+    width: auto;
+    border-radius: 50%;
 }
 .sidebar{
 background-image: linear-gradient(225deg, var(--custom-blue), var(--sky-blue));
