@@ -225,8 +225,23 @@ border-bottom-left-radius: 20px;
 .trending{
     grid-column: 2;
     grid-row: 3;
-    background-color: bisque;
+    font-size: 24px;
+    align-self: end;
+    padding-bottom: 1%;
 }
 .t-card{
-    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--slate-white);
+    border-radius: 20px;
+    box-shadow: 2px 7px 10px var(--shadow-color);
+}
+.t-container{
+    justify-self: flex-start;
+}
+.work{
+    color: gray;
 }
